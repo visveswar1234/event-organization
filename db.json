@@ -1,0 +1,27 @@
+{
+  "user": [
+    {
+      "id": "vis",
+      "name": "vis",
+      "password": "vis",
+      "email": "vis@gmail.com",
+      "phone": "",
+      "country": "india",
+      "address": "",
+      "gender": "male"
+    },
+    {
+      "id": "fb62",
+      "username": "",
+      "password": ""
+    },
+    {
+      "id": "1652",
+      "username": "harshi",
+      "password": "123",
+      "name": "",
+      "email": "",
+      "gender": ""
+    }
+  ]
+}

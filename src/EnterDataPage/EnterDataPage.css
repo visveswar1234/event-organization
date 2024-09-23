@@ -1,0 +1,64 @@
+/* EnterDataPage.css */
+
+.enter-data-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    height: 100vh;
+    background-color: #f0f0f0; /* Background color for the entire page */
+  }
+  
+  .enter-data-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    margin-top: auto; /* Push the box to the bottom */
+  }
+  
+  .enter-data-header h2 {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .enter-data-body {
+    padding: 20px 0;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  

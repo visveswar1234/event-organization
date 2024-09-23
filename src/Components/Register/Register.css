@@ -1,0 +1,66 @@
+/* Container for the registration form */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align items to the bottom */
+  align-items: center;
+  margin-top: auto; /* Push the container to the bottom of its parent */
+  margin-bottom: 100px; /* Add margin at the bottom */
+  padding: 20px; /* Padding for the container */
+}
+
+/* Styling for the registration form */
+.register-card {
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Styling for the registration header */
+.register-header h2 {
+  color: #333; /* Header color */
+  margin-bottom: 20px; /* Add margin below the header */
+  margin-top: 100px;
+}
+
+/* Styling for the registration body */
+.register-body {
+  display: flex;
+  flex-direction: column; /* Display children in a column */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for form groups */
+.form-group {
+  width: 100%; /* Full width for form groups */
+  margin-bottom: 15px; /* Add space between form groups */
+}
+
+/* Styling for form controls */
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px; /* Add spacing between form controls */
+}
+
+/* Styling for the registration footer */
+.register-footer {
+  margin-top: 20px; /* Adjusted margin top */
+  text-align: center;
+}
+
+/* Styling for buttons in the registration footer */
+.register-footer button,
+.register-footer .btn {
+  margin-right: 10px;
+}
+
+/* Additional styling for error messages */
+.errmsg {
+  color: red;
+}

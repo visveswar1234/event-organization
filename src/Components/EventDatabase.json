@@ -1,0 +1,28 @@
+{
+  "eventListj": [
+    {
+      "id": "",
+      "heading": "",
+      "date": {
+        "year": "",
+        "month": ""
+      },
+      "location": "",
+      "description": "",
+      "img": "",
+      "category": ""
+    },
+    {
+      "id": "",
+      "heading": "",
+      "date": {
+        "year": "",
+        "month": ""
+      },
+      "location": "",
+      "description": "",
+      "img": "",
+      "category": ""
+    }
+  ]
+}

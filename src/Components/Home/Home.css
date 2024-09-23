@@ -1,0 +1,119 @@
+/* Home.css */
+
+.slideshow-wrapper {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  perspective: 2000px;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.slide.active {
+  transform: perspective(1500px) translateZ(200px) rotateY(0deg);
+  opacity: 1;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(8px);
+  transform: translateZ(-200px);
+}
+
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  filter: grayscale(0.5) contrast(1.2);
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  z-index: 2;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 50%;
+}
+
+.slideshow-wrapper:hover .control {
+  opacity: 1;
+}
+
+.control:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.pagination button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 3;
+}
+
+.pagination button:hover {
+  background: white;
+}

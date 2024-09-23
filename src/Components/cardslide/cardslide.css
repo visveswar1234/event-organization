@@ -1,0 +1,102 @@
+/* cardslide.css */
+
+.card-slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-category-container {
+    margin-top: 20px;
+}
+
+.card-category {
+    margin-bottom: 30px;
+}
+
+.card-category h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff; /* White text color */
+}
+
+.card-slider-content {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    position: relative; /* Add position relative */
+}
+
+.card-slider-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); /* Adjust blur intensity as needed */
+    z-index: 1; /* Ensure the overlay is behind cards */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Add transition for smooth effect */
+}
+
+.card-slider-content:hover::before { /* Show overlay on hover */
+    opacity: 1;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 300px; /* Fixed width for all cards */
+    height: 300px; /* Reduced height for all cards */
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure cards are stacked above overlay */
+    z-index: 2; /* Ensure cards are above overlay */
+    background-color: #333; /* Dark background color for cards */
+}
+
+
+.card img {
+    width: 100%;
+    height: 60%; /* Adjust as needed */
+    object-fit: cover;
+}
+
+.card .card-content {
+    padding: 20px;
+    color: #fff; /* White text color for card content */
+}
+
+.event-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.slide-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    color: #007bff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.slide-button.left {
+    left: 10px;
+}
+
+.slide-button.right {
+    right: 10px;
+}
+
+.slide-button:focus {
+    outline: none;
+}
